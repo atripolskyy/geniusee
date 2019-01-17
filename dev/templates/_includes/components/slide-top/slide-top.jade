@@ -1,0 +1,31 @@
+mixin slide-top(className)
+  div(class=typeof className === "undefined" ? "section" : "section " + className)
+    div.container.d-flex.flex-wrap.content-wrap
+      div.navbar.d-flex
+          a(href="#" class="navbar-brand mr-auto")
+            img(src=route.images + "cool-logo.png" srcset=route.images + "cool-logo@2x.png 2x,cool-logo@3x.png 3x" class="navbar__logo")
+          a(href="#" class="header-phone") 294.606.660
+          button(class="navbar-toggler" type="button" data-toggle="offcanvas")
+            span.navbar-toggler-icon
+            span.navbar-toggler-icon
+            span.navbar-toggler-icon
+      div.cols-grid-wrap
+        div.cols-grid
+          div.cols-grid__1
+            div.subtitle Sed ut perspiciatis
+            div.title Good luck with your test task!
+          div.cols-grid__2
+            div.subtitle Nemo enim ipsam: 
+            p.subtitle__description Neque porro quisquam est, qui dolorem ipsum quia
+            button.btn-down Move down
+          div.cols-grid__3
+            img(src=route.images + "boss-baby-character.png")
+      //div.w-100
+      div.col.section__footer
+        p.form-title Just Upload Your File Here
+        div.file-upload
+          div.drap-drop Drag and drop
+          div.select-file Select file
+      div.scroll-nav
+        div.scroll-nav__title Scroll to discover
+        button.btn-down next-slide

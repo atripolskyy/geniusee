@@ -1,0 +1,23 @@
+mixin slide-base(className)
+  div(class=typeof className === "undefined" ? "section" : "section " + className)
+    div.container.d-flex.align-content-end.flex-wrap.content-wrap
+      div.col.col-main.d-flex
+        div.col.col__section-number
+          div.section-number
+            span 1/06
+        div.col
+          div.content
+            div.section__subtitle Quis autem vel
+            h2.section__title Ut enim ad minima veniam
+            ol
+              li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
+              li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
+              li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
+              li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.
+      div.w-100
+      div.col.section__footer
+        p Finibus Bonorum et Malorum
+      div.scroll-nav
+        div.scroll-nav__title Scroll to discover
+        button.btn-down next-slide

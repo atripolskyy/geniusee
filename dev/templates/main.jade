@@ -1,0 +1,11 @@
+extends _includes/_extends/main
+
+include _includes/components/slide-top/slide-top
+include _includes/components/slide-base/slide-base
+
+
+block content
+	.c-fullpage.c-full.js-fullpage#fullpage
+		+slide-top('section-first')
+		+slide-base()
+	.c-full__scrolltop.js-scrolltop-trigeer
